@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom'
 import './index.css';
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import BookList from './BookList';
-import About from './About';
-import Album from './Album';
+import Login from './Login';
+import Payment from './Payment';
+import Home from './Home'
 
 import Navbar from './Navbar';
 import Error from './Error';
-import ChartHolder from './ChartHolder';
+import Balance from './Balance';
 
 
 const ReactRouterSetup = () =>{
@@ -19,16 +19,16 @@ const ReactRouterSetup = () =>{
   <Navbar />
   <Switch>
     <Route exact path='/'>
-      <BookList/>
+      <Login/>
     </Route>
-    <Route path='/about'>
-      <About/>
+    <Route path='/home'>
+      <Home/>
     </Route>
-    <Route path = '/Album'>
-      <Album/>
+    <Route path = '/payment'>
+      <Payment/>
     </Route>
-    <Route path = '/Charts'>
-      <ChartHolder/>
+    <Route path = '/balance'>
+      <Balance/>
     </Route>
     <Route path='*'>
       <Error />
