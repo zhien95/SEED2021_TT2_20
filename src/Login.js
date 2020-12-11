@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import './Login.css'
 class Login extends Component {
     render () {
         return (
-            <div>
-                <h1>Login Page</h1>
-    
+            <div className="login-card">
+                <h1>Login</h1>
+
                 <form>
                     <label>
                         Username:
@@ -21,4 +22,5 @@ class Login extends Component {
         )
     }
 }
+
 export default withRouter(Login)
