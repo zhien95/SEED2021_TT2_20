@@ -1,17 +1,44 @@
-import React, { Component } from 'react'
+import React from "react";
 
-export class Payment extends Component {
-    
+import Header from './components/Header'
 
+import Balance from './components/Balance'
+import IncomeExpenses from './components/IncomeExpenses'
+import AddTransaction from './components/AddTransaction'
+import TransactionList from './components/TransactionList'
+import GlobalProvider from './components/GlobalState'
+import './App.css'
 
-
-    render() {
-        return (
-            <div>
-                <h1>Payment</h1>
-            </div>
-        )
-    }
+function Payment(){
+    return(
+        <div>
+            <GlobalProvider>
+                <Header/>
+                <div className ="container">
+                    <Balance/>
+                    <IncomeExpenses/>
+                    <TransactionList/>
+                    <AddTransaction/>
+                </div>
+            </GlobalProvider>
+        </div>
+    )
 }
 
-export default Payment
+
+// function Payment() {​​​​​
+//   return (
+//     <div>
+//     <GlobalProvider>
+//       <Header />
+//       <div className="container">
+//         <Balance />
+//         <IncomeExpenses />
+//         <TransactionList />
+//         <AddTransaction />
+//       </div>
+//     </GlobalProvider>
+//   </div>
+//   );
+// }​​​​​
+export default Payment;
