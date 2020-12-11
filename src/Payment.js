@@ -25,6 +25,21 @@ export class Payment extends Component {
           )
       }
 
+    renderTableData() {
+        const id = 0;
+        const custID = null;
+        const payeeID = null;
+        const date = null;
+        const amount = null;
+        return (
+            <tr key={id}>
+                <td>{custID}</td>
+                <td>{payeeID}</td>
+                <td>{date}</td>
+                <td>{amount}</td>
+            </tr>
+        )
+    }
 
     render() {
         return (
@@ -43,6 +58,11 @@ export class Payment extends Component {
                         <th style={{"borderWidth":"1px", 'borderColor':"#aaaaaa", 'borderStyle':'solid', "width":"20%"}}>Payee</th>
                         <th style={{"borderWidth":"1px", 'borderColor':"#aaaaaa", 'borderStyle':'solid', "width":"30%"}}>Date of Transaction</th>
                         <th style={{"borderWidth":"1px", 'borderColor':"#aaaaaa", 'borderStyle':'solid', "width":"20%"}}>Amount</th>
+                    </tr>
+                    <tr>
+                        {
+                            this.renderTableData()
+                        }
                     </tr>
                 </table>
             </div>
