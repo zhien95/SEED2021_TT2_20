@@ -12,6 +12,7 @@ class Login extends Component {
         }
             this.changeHandler = this.changeHandler.bind(this);
             this.submitHandler = this.submitHandler.bind(this);
+            this.redirectToHome = this.redirectToHome.bind(this);
     };
 
     changeHandler = e => {
@@ -19,6 +20,10 @@ class Login extends Component {
         this.setState({
             [name]: e.target.value
         });
+    }
+
+    redirectToHome = () => {
+        this.props.history.push('/home');
     }
 
     submitHandler = e => {
@@ -35,7 +40,8 @@ class Login extends Component {
             .then(res => {
                 if (res.status !== 200) {
                     throw new Error('Error in logging in!!!');
-                }                
+                }
+                this.redirectToHome();                
             })
             .catch(err => {
                 console.log(err);
@@ -55,7 +61,7 @@ class Login extends Component {
                     <label for="password">
                         Password:
                         <br />
-                        <input name="password" type="password" placeholder="Password" required value={this.state.password} onChange={this.changeHandler} />
+                        <input name="password" type="text" placeholder="Password" required value={this.state.password} onChange={this.changeHandler} />
                     </label>
                     <br />
                     <button type="submit">Login</button>
