@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SEED2021_TT2_20/static/css/main.77b3e30f.chunk.css",
+    "main.js": "/SEED2021_TT2_20/static/js/main.79460e0d.chunk.js",
+    "main.js.map": "/SEED2021_TT2_20/static/js/main.79460e0d.chunk.js.map",
+    "runtime-main.js": "/SEED2021_TT2_20/static/js/runtime-main.fe15235b.js",
+    "runtime-main.js.map": "/SEED2021_TT2_20/static/js/runtime-main.fe15235b.js.map",
+    "static/js/2.6ed7b617.chunk.js": "/SEED2021_TT2_20/static/js/2.6ed7b617.chunk.js",
+    "static/js/2.6ed7b617.chunk.js.map": "/SEED2021_TT2_20/static/js/2.6ed7b617.chunk.js.map",
+    "index.html": "/SEED2021_TT2_20/index.html",
+    "static/css/main.77b3e30f.chunk.css.map": "/SEED2021_TT2_20/static/css/main.77b3e30f.chunk.css.map",
+    "static/js/2.6ed7b617.chunk.js.LICENSE.txt": "/SEED2021_TT2_20/static/js/2.6ed7b617.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fe15235b.js",
+    "static/js/2.6ed7b617.chunk.js",
+    "static/css/main.77b3e30f.chunk.css",
+    "static/js/main.79460e0d.chunk.js"
+  ]
+}
